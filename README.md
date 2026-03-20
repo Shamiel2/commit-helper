@@ -21,20 +21,20 @@ A local Git commit helper that automates the full stage → commit → push work
 
 ```bash
 # Auto-generate a commit message, then prompt to confirm
-python commit.py
+uv run commit.py
 
 # Use a custom commit message
-python commit.py "Fix typo in README"
+uv run commit.py "Fix typo in README"
 
 # Commit but skip pushing to remote
-python commit.py --no-push
+uv run commit.py --no-push
 
 # Preview what would happen without making any changes
-python commit.py --dry-run
+uv run commit.py --dry-run
 
 # Combine flags
-python commit.py "My message" --no-push
-python commit.py --dry-run --no-push
+uv run commit.py "My message" --no-push
+uv run commit.py --dry-run --no-push
 ```
 
 ## Workflow of the helper
