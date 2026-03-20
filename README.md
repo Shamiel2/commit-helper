@@ -1,4 +1,4 @@
-# commit.py
+# Commit Helper
 
 A local Git commit helper that automates the full stage → commit → push workflow, with optional auto-generated commit messages.
 
@@ -37,7 +37,7 @@ python commit.py "My message" --no-push
 python commit.py --dry-run --no-push
 ```
 
-## Workflow
+## Workflow of the helper
 
 1. **Update `requirements.txt`** — runs `uv pip compile pyproject.toml -o requirements.txt` (skipped on failure with a warning)
 2. **Gather changes** — reads `git status` to list modified files and the current branch
@@ -69,6 +69,7 @@ Total files changed: 5
 ```
 
 ## File Categorization
+These are the categories that the script looks at.
 
 | Category  | Matches                                                   |
 |-----------|-----------------------------------------------------------|
