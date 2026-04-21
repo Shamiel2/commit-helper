@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Synapse Commit Helper
+Commit Helper
 ---------------------
 Usage:
     python commit.py                     # auto-generate commit message
